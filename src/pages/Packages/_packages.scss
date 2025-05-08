@@ -1,0 +1,42 @@
+.packages {
+    &__container {
+        max-width: 70rem;
+        margin: 3rem auto;
+        padding: 3rem;
+    }
+
+    &__pt-content {
+        display: flex;
+        margin-bottom: 3rem;
+
+        > div {
+            padding: 3rem;
+            flex: 50%;
+        }
+    }
+
+    &__pt-comment {
+        background: #607D7F;
+        color: #fff;
+        line-height: 1.75rem;
+    }
+
+    &__session-links {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 0 !important;
+
+        &--content {
+            display: flex;
+            flex-direction: column;
+    
+            > a {
+                padding: 0.5rem;
+                color: #53A5AB;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}

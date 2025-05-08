@@ -1,0 +1,110 @@
+.navigator {
+    &__content {
+        height: 25rem;
+        text-align: center;
+        color: #000000;
+        background-color: #FFFFFF;
+        overflow: auto;
+    }
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th, td {
+            border: 1px solid #C0C0C0;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        thead th {
+            color: #FFFFFF;
+            font-size: 1.125rem;
+            text-align: center;
+            background-color: #5E98D9;
+        }
+    }
+
+    &__item {
+        &-row {
+            background-color: #FFFFFF;
+    
+            &:nth-child(even) {
+                background-color: #F4F4F4;
+            }
+
+            &--current, &:hover {
+                background-color: #FFFD6F !important;
+            }
+
+            > td:last-child {
+                text-align: center;
+            }
+        }
+
+        &-link {
+            cursor: pointer;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-status {
+            text-transform: lowercase;
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+
+            &--incomplete, &--unseen {
+                color: #FF0000;
+            }
+        }
+
+        &-flagged {
+            display: inline-block;
+            width: 35px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-image: url('/img/btnIcons.png');
+            background-position: left -2225px;
+        }
+    }
+
+    &__toggle {
+        background-color: #5E98D9;
+        padding: 0.5rem;
+
+        &-title {
+            margin: 0;
+            padding-left: 26px;
+            font-family: arial;
+            font-size: 1rem;
+            text-align: left;
+            color: #FFFFFF;
+            background-repeat: no-repeat;
+            background-image: url('/img/btnIcons.png');
+            background-position: left -2060px;
+            cursor: pointer;
+                
+            &:hover {
+                background-position: left -2102px;
+            }
+            &-is--opened {
+                background-position: left -1976px;
+
+                &:hover {
+                    background-position: left -2018px;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        text-align: left;
+    }
+}

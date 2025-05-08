@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+div {
+    font-size: 1.0em;
+    word-wrap: break-word;
+}
+
+span {
+    text-align: left;
+}
+
+p:not(:empty, .abe-mat-html p) {
+    clear: both;
+    margin: 0;
+}
+
+/**
+* Hot Keys
+*/
+span.hotkey {
+    text-decoration: underline
+}
+
+/**
+* Button
+*/
+button {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 5px 0 27px;
+    border: 1px solid transparent;
+    font-size: 18px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+
+button:active, button:focus {
+    border: 1px solid #FFFFFF;
+}
+
+/**
+* Modal
+*/
+.calculator__modal {
+    &.modal__container{
+        min-width: unset;
+    }
+
+    .modal__content {
+        padding: 0;
+    }
+
+    .modal__footer {
+        display: none;
+    }
+}
+
+.explain__modal {
+    .modal__header {
+        border: none;
+    }
+
+    .modal__content {
+        min-width: 40rem;
+        min-height: 20rem;
+        margin: 3px;
+        padding: 1rem;
+        color: #000000;
+        text-align: left;
+        background-color: #FFFFFF;
+    }
+
+    .modal__footer {
+        display: none;
+    }
+}
+
+.navigator__modal {
+    &.modal__container{
+        min-width: 40rem;
+    }
+    
+    .modal__content {
+        padding: 0 3px;
+        pointer-events: visible;
+    }
+
+    .modal__footer {
+        margin-top: 2rem;
+        justify-content: end;
+    }
+}
